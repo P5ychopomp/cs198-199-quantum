@@ -1,0 +1,331 @@
+Benchmark for Kyber 1024\n
+Iteration 1
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.869
+Enc: 13.612
+Dec: 20.411
+Iteration 2
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.867
+Enc: 13.605
+Dec: 20.41
+Iteration 3
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.928
+Enc: 13.688
+Dec: 20.526
+Iteration 4
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.968
+Enc: 13.739
+Dec: 20.592
+Iteration 5
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.928
+Enc: 13.692
+Dec: 20.529
+Iteration 6
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.961
+Enc: 13.718
+Dec: 20.579
+Iteration 7
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.921
+Enc: 13.68
+Dec: 20.513
+Iteration 8
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 10.036
+Enc: 13.843
+Dec: 20.745
+Iteration 9
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.933
+Enc: 13.701
+Dec: 20.538
+Iteration 10
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.918
+Enc: 13.671
+Dec: 20.502
+Iteration 11
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 10.057
+Enc: 13.852
+Dec: 20.775
+Iteration 12
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.902
+Enc: 13.658
+Dec: 20.494
+Iteration 13
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.932
+Enc: 13.685
+Dec: 20.519
+Iteration 14
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.979
+Enc: 13.75
+Dec: 20.615
+Iteration 15
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.901
+Enc: 13.665
+Dec: 20.503
+Iteration 16
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.922
+Enc: 13.686
+Dec: 20.525
+Iteration 17
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.927
+Enc: 13.686
+Dec: 20.517
+Iteration 18
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.895
+Enc: 13.661
+Dec: 20.507
+Iteration 19
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.954
+Enc: 13.736
+Dec: 20.578
+Iteration 20
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.942
+Enc: 13.712
+Dec: 20.56
+Iteration 21
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 10.011
+Enc: 13.796
+Dec: 20.695
+Iteration 22
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.944
+Enc: 13.691
+Dec: 20.538
+Iteration 23
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.954
+Enc: 13.73
+Dec: 20.563
+Iteration 24
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.947
+Enc: 13.713
+Dec: 20.569
+Iteration 25
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.942
+Enc: 13.709
+Dec: 20.557
+Iteration 26
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.987
+Enc: 13.771
+Dec: 20.64
+Iteration 27
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.912
+Enc: 13.668
+Dec: 20.498
+Iteration 28
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.924
+Enc: 13.694
+Dec: 20.519
+Iteration 29
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.917
+Enc: 13.669
+Dec: 20.507
+Iteration 30
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+---------------------------
+  Kyber1024 | (1000 calls)
+---------------------------
+Keygen: 9.984
+Enc: 13.776
+Dec: 20.653

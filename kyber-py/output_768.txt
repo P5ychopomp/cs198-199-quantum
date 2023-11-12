@@ -1,0 +1,19 @@
+Benchmark for Kyber 768
+Iteration 1
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+Keygen: 6.836
+Enc: 9.906
+Dec: 15.184
+
+Iteration 2
+Error importing AES CTR DRBG. Have you tried installing requirements?
+ImportError: No module named 'Crypto'
+
+Kyber will work perfectly fine with system randomness
+Keygen: 6.773
+Enc: 1058.352
+Dec: 15.091
+
