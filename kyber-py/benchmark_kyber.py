@@ -36,10 +36,7 @@ def benchmark_kyber(Kyber, name, count):
         dec = Kyber.dec(c, sk)
         dec_times.append(time() - t2)
             
-    print(f"Keygen: {round(sum(keygen_times),3)}")
-    print(f"Enc: {round(sum(enc_times), 3)}")
-    print(f"Dec: {round(sum(dec_times),3)}")
-    
+    print(round(sum(keygen_times),3), round(sum(enc_times), 3), round(sum(dec_times),3), sep=', ', end="" if name == "Kyber1024" else ", ")
     
 if __name__ == '__main__':
     # profile_kyber(Kyber512)
@@ -47,6 +44,6 @@ if __name__ == '__main__':
     # profile_kyber(Kyber1024)
     
     count = 1000
-    # benchmark_kyber(Kyber512, "Kyber512", count)
+    benchmark_kyber(Kyber512, "Kyber512", count)
     benchmark_kyber(Kyber768, "Kyber768", count)    
-    # benchmark_kyber(Kyber1024, "Kyber1024", count)    
+    benchmark_kyber(Kyber1024, "Kyber1024", count)    
