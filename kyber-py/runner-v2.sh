@@ -1,7 +1,7 @@
 #!/bin/bash
 
 run_python_script() {
-    python benchmark_kyber.py $1
+    python3 benchmark_kyber.py $1
 }
 echo "Benchmarking..."
 
