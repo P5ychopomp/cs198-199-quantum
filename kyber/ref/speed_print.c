@@ -45,7 +45,7 @@ void print_results(const char *s, uint64_t *t, size_t tlen) {
     t[i] = t[i+1] - t[i] - overhead;
 
   printf("%s\n", s);
-  printf("median: %llu cycles/ticks\n", (unsigned long long)median(t, tlen));
-  printf("average: %llu cycles/ticks\n", (unsigned long long)average(t, tlen));
-  printf("\n");
+  //printf("median: %llu cycles/ticks\n", (unsigned long long)median(t, tlen));
+  printf("%llu,\n", (unsigned long long)average(t, tlen));
+  //printf("\n");
 }
