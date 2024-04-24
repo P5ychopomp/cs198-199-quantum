@@ -15,9 +15,7 @@ def profile_kyber(Kyber):
     
 def benchmark_kyber(Kyber, name, count):
     # Banner
-    # print(f"-"*27)
-    # print(f"  {name} | ({count} calls)")
-    # print(f"-"*27)
+    # 
     
     keygen_times = []
     enc_times = []
@@ -36,17 +34,17 @@ def benchmark_kyber(Kyber, name, count):
         dec = Kyber.dec(c, sk)
         dec_times.append(time() - t2)
             
-    print(f"Keygen: {round(sum(keygen_times),3)}")
-    print(f"Enc: {round(sum(enc_times), 3)}")
-    print(f"Dec: {round(sum(dec_times),3)}")
-    
+    print(f"{round(sum(keygen_times), 5)}, {round(sum(enc_times), 5)}, {round(sum(dec_times), 5)}", end="" if name == "Kyber1024" else ", ")
     
 if __name__ == '__main__':
     # profile_kyber(Kyber512)
     # profile_kyber(Kyber768)
     # profile_kyber(Kyber1024)
+
+    kyberLevels = ["Kyber512", "Kyber768", "Kyber1024"]
     
     count = 1000
-    # benchmark_kyber(Kyber512, "Kyber512", count)
+    
+    benchmark_kyber(Kyber512, "Kyber512", count)
     benchmark_kyber(Kyber768, "Kyber768", count)    
-    # benchmark_kyber(Kyber1024, "Kyber1024", count)    
+    benchmark_kyber(Kyber1024, "Kyber1024", count)    
