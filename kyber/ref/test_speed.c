@@ -40,8 +40,8 @@ int main()
     crypto_kem_keypair(pk, sk);
     i++;
   }
-  printf("Iterations: %d\n", i);
-  print_results("kyber_keypair: ", t1, i);
+  printf("%d, ", i);
+  // print_results("kyber_keypair: ", t1, i);
 
   start_enc = clock();
   while (((double)(clock() - start_enc)) / CLOCKS_PER_SEC < 3.0)
@@ -50,8 +50,8 @@ int main()
     crypto_kem_enc(ct, key, pk);
     j++;
   }
-  printf("Iterations: %d\n", j);
-  print_results("kyber_encaps: ", t2, j);
+  printf("%d, ", j);
+  // print_results("kyber_encaps: ", t2, j);
 
   start_dec = clock();
   while (((double)(clock() - start_dec)) / CLOCKS_PER_SEC < 3.0)
@@ -60,6 +60,6 @@ int main()
     crypto_kem_dec(key, ct, sk);
     k++;
   }
-  printf("Iterations: %d\n", k);
-  print_results("kyber_decaps: ", t3, k);
+  printf("%d, ", k);
+  // print_results("kyber_decaps: ", t3, k);
 }
