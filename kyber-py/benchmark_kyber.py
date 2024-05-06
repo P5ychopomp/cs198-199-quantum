@@ -22,21 +22,38 @@ def benchmark_kyber(Kyber, name, count):
     keygen_times = []
     enc_times = []
     dec_times = []
-    
-    for _ in range(count):
-        t0 = time()
+    keygen = 0
+    enc = 0
+    decap = 0
+
+    given_time = 3  # given time in seconds
+
+    # For Kyber.keygen()
+    start_time = time()
+    elapsed_time = 0
+    while elapsed_time < given_time:
         pk, sk = Kyber.keygen()
-        keygen_times.append(time() - t0)
-        
-        t1 = time()
+        elapsed_time = time() - start_time
+        keygen += 1
+
+    # For Kyber.enc()
+    start_time = time()
+    elapsed_time = 0
+    while elapsed_time < given_time:
         c, key = Kyber.enc(pk)
-        enc_times.append(time() - t1)
-        
-        t2 = time()
+        elapsed_time = time() - start_time
+        enc += 1
+
+    # For Kyber.dec()
+    start_time = time()
+    elapsed_time = 0
+    while elapsed_time < given_time:
         dec = Kyber.dec(c, sk)
-        dec_times.append(time() - t2)
-            
-    print(round(sum(keygen_times),3), round(sum(enc_times), 3), round(sum(dec_times),3), sep=', ', end="" if name == "Kyber1024" else ", ")
+        elapsed_time = time() - start_time
+        decap += 1
+
+    print(keygen,enc,decap, sep=', ', end="" if name == "Kyber1024" else ", ")
+    # print(round(sum(keygen_times),3), round(sum(enc_times), 3), round(sum(dec_times),3), sep=', ', end="" if name == "Kyber1024" else ", ")
     
 if __name__ == '__main__':
     # profile_kyber(Kyber512)

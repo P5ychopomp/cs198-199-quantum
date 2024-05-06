@@ -5,17 +5,17 @@ run_python_script() {
 }
 echo "Benchmarking..."
 
-echo "Iteration, Kyber512, , , Kyber768, , , Kyber1024, , " > benchmark_windows.csv
-echo " , Keygen, Encryption, Decryption, Keygen, Encryption, Decryption, Keygen, Encryption, Decryption " >> benchmark_windows.csv
+echo "Iteration, Kyber512, , , Kyber768, , , Kyber1024, , " > py_winlaptop.csv
+echo " , Keygen, Encryption, Decryption, Keygen, Encryption, Decryption, Keygen, Encryption, Decryption " >> py_winlaptop.csv
 
 # Run the Python script for 30 iterations
 for ((i = 1; i <= 30; i++)); do
     echo "Started Iteration $i."
-    echo -n "Iteration $i" >> benchmark_windows.csv
-    # Run the Python script and append the benchmark_windows to the CSV file
-    echo -n ", " >> benchmark_windows.csv
-    run_python_script $i >> benchmark_windows.csv
-    echo "" >> benchmark_windows.csv
+    echo -n "Iteration $i" >> py_winlaptop.csv
+    # Run the Python script and append the py_winlaptop to the CSV file
+    echo -n ", " >> py_winlaptop.csv
+    run_python_script $i >> py_winlaptop.csv
+    echo "" >> py_winlaptop.csv
 done
 
 echo "Done."
