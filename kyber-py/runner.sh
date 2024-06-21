@@ -1,15 +1,34 @@
 #!/bin/bash
+#SBATCH --job-name=cs199_quantum
+#SBATCH --partition=batch
+#SBATCH --nodes=4
+#SBATCH --ntasks-per-node=60
+#SBATCH --output=QUANTUMlog.log
 
-N=30
+echo "SLURM_JOBID="$SLURM_JOBID
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
+echo "SLURM_NNODES"=$SLURM_NNODES
+echo "Working directory = "$SLURM_SUBMIT_DIR
 
-OUTPUT_FILE=output_768.txt
-PYTHON_SCRIPT=benchmark_kyber.py
+run_python_script() {
+    python3 benchmark_kyber.py $1
+}
 
-rm -f $OUTPUT_FILE
+rm -f benchmark_hpc.csv
 
-echo "Benchmark for Kyber 768" >> $OUTPUT_FILE
-for ((k=1; k<=N; k++)); do
-    echo "Iteration $k" >> $OUTPUT_FILE
-    python3 $PYTHON_SCRIPT 2> /dev/null 1>> $OUTPUT_FILE
-    echo "" >> $OUTPUT_FILE
+echo
+echo "Benchmarking..."
+
+echo "Iteration, , Kyber512, , , Kyber768, , , Kyber1024, , Duration" > benchmark_hpc.csv
+echo " , Keygen, Enc, Dec, Keygen, Enc, Dec, Keygen, Enc, Dec, " >> benchmark_hpc.csv
+
+# Run the Python script for 30 iterations
+for ((i = 1; i <= 30; i++)); do
+    echo "Started Iteration $i."
+    echo -n "$i, " >> benchmark_hpc.csv
+    # Run the Python script and append the benchmark_hpc to the CSV file
+    run_python_script $i >> benchmark_hpc.csv
+    echo "" >> benchmark_hpc.csv
 done
+
+echo "Done."
